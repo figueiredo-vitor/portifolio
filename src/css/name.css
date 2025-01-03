@@ -1,0 +1,30 @@
+.vitor {
+    border-right: 1px solid rgba(255,255,255,255) ;
+    color: aqua;
+    animation: blinkCursor 500ms steps(40 ) infinite normal , 
+    typing 4s steps(40) 1s infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@keyframes blinkCursor {
+    from {
+        border-right-color: rgba(255,255,255,255) ;
+    }
+
+    to {
+        border-right-color: transparent;
+    }
+
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 11em;
+    }
+
+}
